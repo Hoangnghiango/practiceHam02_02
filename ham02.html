@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào.
+        //  Gọi hàm vừa xây dựng được.
+        function square(para) {
+            return para * para;
+        }
+        alert(square(2));
+
+        //Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. 
+        // Gọi hàm vừa xây dựng được
+
+        function area(r) {
+            return Math.PI * r * r;
+
+        }
+        function perimeter(r) {
+            return 2 * Math.PI * r;
+        }
+        alert(area(2));
+        alert(perimeter(3));
+
+        //Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. 
+        // Gọi hàm vừa xây dựng được.
+        function factorial(number) {
+            let result = 1;
+
+            if (number < 0) {
+                alert("So nhap vao phai lon hon hoac bang 0");
+            } else if (number == 0 || number == 1) {
+                return result;
+            }
+
+            for (let i = 1; i <= number; i++) {
+                result *= i;
+
+            }
+            return result;
+        }
+        let input = parseInt(prompt("Nhap so vao day: "));
+        alert(factorial(input));
+
+        //Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải 
+        // là ký tự số không. Nếu là ký tự số hàm trả về true, 
+        // ngược lại trả về false.
+
+        function checkType(para) {
+            if (isNaN(para)) {
+                alert("la chuoi");
+                return false;
+            
+            } else {
+                alert("la so");
+                return true;
+
+
+            }
+
+        }
+        checkType(prompt("Input something..."))
+
+        //Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, 
+        // trả về số nguyên có giá trị nhỏ nhất.
+        function min(a,b,c){
+            if(a<b&& a<c){
+                alert(a +"be nhat");
+            } else if(b>c){
+                alert(c+"be nhat nhat");
+            } else{
+                alert(b+ "be nhat");
+            }
+        }
+        let a =prompt("nhap a");
+        let b =prompt("nhap b");
+        let c =prompt("nhap c");
+
+        min(a,b,c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
